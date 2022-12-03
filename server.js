@@ -21,6 +21,10 @@ function handler(req, res) {
             send({ message: `The server is running`, uptime: process.uptime() });
         break;
 
+        case '/contact':
+            send({ message: `Contact session`});
+        break;
+
         default:
             send({ message: 'Resource not found' }, 404);
         break;
